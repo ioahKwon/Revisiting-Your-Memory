@@ -1,5 +1,5 @@
 # Revisiting Your Memory: Reconstruction of Affect-Contextualized Memory via EEG-guided Audiovisual Generation (ACM MM'25 CogMAEC-W Oral)
-Official repository for the paper "Revisiting Your Memory: Reconstruction of Affect-Contextualized Memory via EEG-guided Audiovisual Generation (RYM)". This repository provides the **RYM** demo code and the **EEG-AffectiveMemory dataset**.
+**Official repository** for the paper "Revisiting Your Memory: Reconstruction of Affect-Contextualized Memory via EEG-guided Audiovisual Generation (RYM)". This repository provides the **RYM** demo code and the **EEG-AffectiveMemory dataset**.
 
 
 <!-- - Project page: [The Official Website for RYM.](https://aesfa-nst.github.io/AesFA/) -->
