@@ -17,7 +17,7 @@
 <u>Comments</u>
 - The pre-trained Affect Extractor (.pt) can be found in the `CEBRA` folder.
 - For affect–text alignment, we used **Claude 3.5 Sonnet** with pre-defined emotion words (see Section 4.3 of the paper).
-- For image generation, we used **Stable Diffusion v1.5** (text encoder and LDM). For music generation, we followed the **MusicGEN** framework and pipeline.
+- For image generation, we used **Stable Diffusion v1.5** (text encoder and LDM). For music generation, we followed the **MusicGEN-melody** framework and pipeline.
 
 
 ## EEG-AffectiveMemory Dataset
@@ -36,11 +36,13 @@
 - **Sketch paintings**
   - Sketch images for all subjects are available at:  
     `./EEG_AffectiveMemory_dataset/sub-{id}/sub-{id}-sketch.png`
+  - To generate video, run the `./image_video_decoding.ipynb` notebook.
 
 - **Associated musical pieces**
   - Due to copyright restrictions, the associated musical pieces are not included directly.  
     Instead, we provide their titles and the corresponding links in:  
     `./EEG_AffectiveMemory_dataset/sub-{id}/sub-{id}-text.txt`
+  - To generate music, first place your music file at `./EEG_AffectiveMemory_dataset/sub-{id}/sub-{id}-melody.wav`, then run the `music_generation.ipynb` notebook.
 
 ## Abstract
 In this paper, we introduce **RevisitAffectiveMemory**, a novel task designed to reconstruct autobiographical memories through audio-visual generation guided by affect extracted from electroencephalogram (EEG) signals. To support this pioneering task, we present the **EEG-AffectiveMemory** dataset, which encompasses textual descriptions, visuals, music, and EEG recordings collected during memory recall from nine participants. Furthermore, we propose **RYM** (**R**evisit **Y**our **M**emory), a three-stage framework for generating synchronized audio-visual contents while maintaining dynamic personal memory affect trajectories. Experimental results demonstrate our method successfully decodes individual affect dynamics trajectories from neural signals during memory recall (F1=0.9). Also, our approach faithfully reconstructs affect-contextualized audio-visual memory across all subjects, both qualitatively and quantitatively, with participants reporting strong affective concordance between their recalled memories and the generated content. Especially, contents generated from subject-reported affect dynamics showed higher correlation with participants' reported affect dynamics trajectories (r=0.265, p<.05) and received stronger user preference (preference=56%) compared to those generated from randomly reordered affect dynamics. Our approaches advance affect decoding research and its practical applications in personalized media creation via neural-based affect comprehension.
