@@ -55,3 +55,19 @@ In this paper, we introduce **RevisitAffectiveMemory**, a novel task designed to
 ![Figure3](./Fig/fig3_revised.png)
 ![Figure4](./Fig/fig4_compressed.png)
 ![Figure5](./Fig/fig5_h.jpg)
+
+
+## Citation
+
+If you find our paper, code, or dataset useful for your research, please consider citing our work:
+
+
+```bibtex
+@inproceedings{kwon2025revisiting,
+  title={Revisiting Your Memory: Reconstruction of Affect-Contextualized Memory via EEG-guided Audiovisual Generation},
+  author={Kwon, Joonwoo and Wang, Heehwan and Lee, Jinwoo and Kim, Sooyoung and Yoo, Shinjae and Lin, Yuewei and Cha, Jiook},
+  booktitle={Proceedings of the 1st International Workshop on Cognition-oriented Multimodal Affective and Empathetic Computing},
+  pages={1--10},
+  year={2025}
+}
+```
