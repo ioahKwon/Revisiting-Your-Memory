@@ -1,9 +1,10 @@
 # Revisiting Your Memory: Reconstruction of Affect-Contextualized Memory via EEG-guided Audiovisual Generation (ACM MM'25 CogMAEC-W Oral)
-**Official repository** for the paper "Revisiting Your Memory: Reconstruction of Affect-Contextualized Memory via EEG-guided Audiovisual Generation (RYM)". This repository provides the **RYM** demo code and the **EEG-AffectiveMemory dataset**.
+**Official repository** for the paper "Revisiting Your Memory: Reconstruction of Affect-Contextualized Memory via EEG-guided Audiovisual Generation (RYM)". This repository provides the **RYM** demo code. The **EEG-AffectiveMemory dataset** is hosted on Hugging Face: <https://huggingface.co/datasets/kwonjoon/Revisiting-Your-Memory>.
 
 
 <!-- - Project page: [The Official Website for RYM.](https://aesfa-nst.github.io/AesFA/) -->
 - arXiv preprint: <https://arxiv.org/abs/2412.05296>
+- Dataset (Hugging Face): <https://huggingface.co/datasets/kwonjoon/Revisiting-Your-Memory>
 <br></br>
 
 ![Figure1](./Fig/fig1.png)
@@ -21,6 +22,13 @@
 
 
 ## EEG-AffectiveMemory Dataset
+- **Download** (CC BY-NC 4.0)
+  ```bash
+  hf download kwonjoon/Revisiting-Your-Memory --repo-type dataset --local-dir EEG_AffectiveMemory_dataset
+  ```
+  Place the folder at `./EEG_AffectiveMemory_dataset/` in this repository. The paths below assume this location.
+- **Preprocessing code** (MATLAB) is in `./preprocessing/`.
+
 - **Aligning affect with text**
   - We employed prompt engineering with LLMs when aligning affect with text.
   - **Sample Prompt:**  
